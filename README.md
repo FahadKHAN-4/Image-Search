@@ -134,3 +134,8 @@ Here is an example of a Query and the matching results obtained:
 - Average Precision for Query 4354: 0.1
 - Average Precision for Query 3833: 0.2
 
+## Conclusion ##
+
+Based on the results obtained in this instance search project, it is evident that the SIFT method outperformed the CNN method with the Resnet18 backbone. SIFT has been to match with large number of similar images hence why high accuraies have been observed for the most part. For a few querries; sift could produce good result due it limitation to change in viewpoint. CNN on the other hand was able to match between an accuracy of 0.1 to 0.5 or 1 to 5 accurate matches in the 10 best matches it outputted.
+
+Despite its superiority in accuracy, it is worth noting that the SIFT method had a significant drawback of requiring five times more time to extract feature and comapre them compared to CNN. It is important to highlight that the project did not explore the use of Resnet50, a more accurate backbone for CNN, due to the longer feature extraction time it entails.
