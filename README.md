@@ -25,7 +25,7 @@ The results obtained can be seen below
 
 <img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
 
-### 2.2 10 best matches for all the queries ###
+### 2.2 Ten best matches for all the queries ###
 
 Here are the 10 best matching results obtained from the instance search implementation using CNN (ResNet18) and Cosine similarity:
 
@@ -84,8 +84,6 @@ During the analysis, it was observed that image 448 exhibited matches with nearl
 
 ### 3.1 An example match between one query and 10 best matches obtained ###
 
-Here is an example of a Query and the matching results obtained:
-
     For Query 316.png:
 
 <img src="/data/Source_Results/316.jpg" alt="Query" width="auto" height="auto">
@@ -94,7 +92,7 @@ Here is an example of a Query and the matching results obtained:
 
 <img src="/data/Source_Results/316_10Best.png" alt="10_Best" width="auto" height="auto">
 
-### 3.2 10 best matches for all the queries ###
+### 3.2 Ten best matches for all the queries ###
 
 Here are the 10 best matching results obtained from the instance search implementation using SIFT and Brute-Force matching.
 
