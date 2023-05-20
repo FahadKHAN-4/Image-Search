@@ -42,5 +42,6 @@ For Query 4354.png
 <img src="/data/Source_Results/4354.jpg" alt="Query" width="auto" height="auto">
 
 The 10 Best Matches are:
+
 <img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
 
