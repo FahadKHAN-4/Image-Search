@@ -13,9 +13,9 @@ To begin, I cropped the query images based on the provided bounding box coordina
 
 Subsequently, I manually tested the similarity between feature vectors using both Cosine similarity and Euclidean distance measures. After evaluating the results, I found that Cosine similarity yielded superior outcomes. Consequently, I employed Cosine similarity to match the corresponding feature vectors of all 20 query images with the 5000 gallery images.
 
-### 2.1 An Example Match Between A Query and 10 Best Matches Obtained ###
+The results obtained can be seen below
 
-Here is an example of a Query and the matching results obtained:
+### 2.1 An example match between one query and 10 best matches obtained ###
 
     For Query 4354.png:
 
@@ -25,7 +25,7 @@ Here is an example of a Query and the matching results obtained:
 
 <img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
 
-### 2.2 ALL the Matches ###
+### 2.2 10 best matches for all the queries ###
 
 Here are the 10 best matching results obtained from the instance search implementation using CNN (ResNet18) and Cosine similarity:
 
@@ -82,7 +82,7 @@ For this project, I utilized the SIFT implementation provided by OpenCV (cv2). U
 
 During the analysis, it was observed that image 448 exhibited matches with nearly all the queries. This occurrence could be attributed to the image's darkness, which somehow caused it to match with various queries.
 
-### 3.1 An Example Match Between A Query and 10 Best Matches Obtained ###
+### 3.1 An example match between one query and 10 best matches obtained ###
 
 Here is an example of a Query and the matching results obtained:
 
@@ -94,7 +94,7 @@ Here is an example of a Query and the matching results obtained:
 
 <img src="/data/Source_Results/316_10Best.png" alt="10_Best" width="auto" height="auto">
 
-### 3.2 ALL the Matches ###
+### 3.2 10 best matches for all the queries ###
 
 Here are the 10 best matching results obtained from the instance search implementation using SIFT and Brute-Force matching.
 
@@ -149,7 +149,7 @@ Based on the results obtained in this instance search project, it is evident tha
 Despite its superiority in accuracy, it is worth noting that the SIFT method had a significant drawback of requiring five times more time to extract feature and comapre them compared to CNN. It is important to highlight that the project did not explore the use of Resnet50, a more accurate backbone for CNN, due to the longer feature extraction time it entails.
 
 ## 5 How to Run the Code ##
-- Clone this repository
+- Clone this repository.
 - Download the "gallery" folder containing 5000 database images from the drive link: https://drive.google.com/drive/folders/1wu0IZ-aWxG1c3wDsifiVCOtXPPB_TyY9?usp=share_link
 - Replace the "gallery" folder in "data" folder with the downloaded folder from the drive link.
 - Run the ResNet_CNN.ipynb and SIFT_Best.ipynb files to obtain the results as seen in section 2.1, 2.2 and 3.1, 2.3 respectively. 
