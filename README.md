@@ -1,5 +1,13 @@
 # Image Search Using CNN and SIFT
 
+## Table of Content ##
+
+- 1 Introduction
+- 2 Convolutional Neural Network (CNN)
+- 3 Scale-Invariant Feature Transform (SIFT)
+- 4 Conclusion
+- 5 How to Run the Code
+
 ## 1 Introduction ##
 In the era of digital imagery, the ability to efficiently search and match specific instances within a vast database of images is a critical task with numerous applications. Instance search, also known as object retrieval or object recognition, involves identifying and retrieving images containing a specific object or instance of interest. This capability finds utility in various domains, including image retrieval, visual search engines, and augmented reality applications.
 
