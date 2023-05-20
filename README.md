@@ -46,6 +46,15 @@ Here is an example of a Query and the matching results obtained:
 
 <img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
 
+### Overall Results ###
+
+Query Results
+Query	2714	776	3557	2461	1709	316	2176	1656	4716	3906
+Acc	0.6	0.9	0.6	0.6	0.8	0.9	0.3	0.8	1	0.1
+Query	35	1258	4929	4445	27	2032	3502	2040	4354	3833
+Acc	0.9	0.2	0.7	0.9	0.1	0.4	0.9	0.3	0.1	0.2
+
+
 ## Scale-Invariant Feature Transform (SIFT) ##
 
 SIFT (Scale-Invariant Feature Transform) is a widely used method for detecting local features in an image. It is capable of identifying and matching similar features that are invariant to scale, rotation, and translation, making it a highly accurate image matching algorithm.
@@ -56,30 +65,30 @@ During the analysis, it was observed that image 448 exhibited matches with nearl
 
 Here are the 10 best matching results obtained from the instance search implementation using SIFT and Brute-Force matching.
 
-Q2714: Matches with images 4256, 448, 3188, 670, 3268, 3908, 2966, 2265, 1412, 887.
-Q776: Matches with images 2575, 448, 2656, 4456, 173, 4918, 2473, 2427, 1323, 1799.
-Q3557: Matches with images 4325, 448, 810, 3166, 91, 4282, 2859, 1657, 3481, 2955.
-Q2461: Matches with images 1044, 448, 4386, 2870, 3791, 1412, 1352, 3362, 1180, 1370.
-Q1709: Matches with images 2857, 79, 3005, 2402, 1603, 2701, 2683, 3628, 448, 2726.
-Q316: Matches with images 3113, 3399, 448, 2684, 3697, 1169, 1592, 184, 4336, 2489.
-Q2176: Matches with images 4018, 448, 139, 2265, 3441, 4386, 1411, 565, 67, 4300.
-Q1656: Matches with images 2003, 934, 1227, 839, 991, 448, 2490, 3875, 2828, 1412.
-Q4716: Matches with images 4286, 4332, 1784, 1884, 518, 1459, 4170, 2807, 4184, 1028.
-Q3906: Matches with images 456, 4859, 2862, 2935, 3380, 565, 2649, 1381, 470, 448.
-Q35: Matches with images 86, 3544, 1860, 4249, 1238, 930, 4523, 1192, 2082, 448.
-Q1258: Matches with images 2403, 448, 4937, 1412, 4789, 2265, 4798, 4908, 4869, 1941.
-Q4929: Matches with images 3259, 448, 672, 2389, 4127, 1876, 2963, 1403, 4324, 4389.
-Q4445: Matches with images 1276, 448, 649, 1164, 1710, 4792, 116, 862, 3956, 623.
-Q27: Matches with images 3457, 448, 2955, 2934, 4281, 4574, 4248, 2746, 1025, 956.
-Q2032: Matches with images 770, 3660, 4277, 4346, 448, 426, 1295, 1524, 1781, 4986.
-Q3502: Matches with images 3331, 448, 3493, 4228, 584, 990, 3370, 739, 4569, 4576.
-Q2040: Matches with images 2666, 448, 781, 3344, 4991, 408, 880, 2955, 2900, 1346.
-Q4354: Matches with images 2, 2900, 781, 4118, 3539, 4637, 2307, 4223, 4948, 448.
-Q3833: Matches with images 1038, 448, 1368, 4565, 4824, 1091, 1113, 241, 2934, 4605.
+Q2714: Matches with images 4256, 448, 3188, 670, 3268, 3908, 2966, 2265, 1412, 887. <br />
+Q776: Matches with images 2575, 448, 2656, 4456, 173, 4918, 2473, 2427, 1323, 1799. <br />
+Q3557: Matches with images 4325, 448, 810, 3166, 91, 4282, 2859, 1657, 3481, 2955. <br />
+Q2461: Matches with images 1044, 448, 4386, 2870, 3791, 1412, 1352, 3362, 1180, 1370. <br />
+Q1709: Matches with images 2857, 79, 3005, 2402, 1603, 2701, 2683, 3628, 448, 2726. <br />
+Q316: Matches with images 3113, 3399, 448, 2684, 3697, 1169, 1592, 184, 4336, 2489. <br />
+Q2176: Matches with images 4018, 448, 139, 2265, 3441, 4386, 1411, 565, 67, 4300. <br />
+Q1656: Matches with images 2003, 934, 1227, 839, 991, 448, 2490, 3875, 2828, 1412. <br />
+Q4716: Matches with images 4286, 4332, 1784, 1884, 518, 1459, 4170, 2807, 4184, 1028. <br />
+Q3906: Matches with images 456, 4859, 2862, 2935, 3380, 565, 2649, 1381, 470, 448. <br />
+Q35: Matches with images 86, 3544, 1860, 4249, 1238, 930, 4523, 1192, 2082, 448. <br />
+Q1258: Matches with images 2403, 448, 4937, 1412, 4789, 2265, 4798, 4908, 4869, 1941. <br />
+Q4929: Matches with images 3259, 448, 672, 2389, 4127, 1876, 2963, 1403, 4324, 4389. <br />
+Q4445: Matches with images 1276, 448, 649, 1164, 1710, 4792, 116, 862, 3956, 623. <br />
+Q27: Matches with images 3457, 448, 2955, 2934, 4281, 4574, 4248, 2746, 1025, 956. <br />
+Q2032: Matches with images 770, 3660, 4277, 4346, 448, 426, 1295, 1524, 1781, 4986. <br />
+Q3502: Matches with images 3331, 448, 3493, 4228, 584, 990, 3370, 739, 4569, 4576. <br />
+Q2040: Matches with images 2666, 448, 781, 3344, 4991, 408, 880, 2955, 2900, 1346. <br />
+Q4354: Matches with images 2, 2900, 781, 4118, 3539, 4637, 2307, 4223, 4948, 448. <br />
+Q3833: Matches with images 1038, 448, 1368, 4565, 4824, 1091, 1113, 241, 2934, 4605. <br />
 
 Here is an example of a Query and the matching results obtained:
 
-    For Query 4354.png:
+    For Query 316.png:
 
 <img src="/data/Source_Results/316.jpg" alt="Query" width="auto" height="auto">
 
