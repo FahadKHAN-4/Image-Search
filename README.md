@@ -48,11 +48,26 @@ Here is an example of a Query and the matching results obtained:
 
 ### Overall Results ###
 
-Query Results
-Query	2714	776	3557	2461	1709	316	2176	1656	4716	3906
-Acc	0.6	0.9	0.6	0.6	0.8	0.9	0.3	0.8	1	0.1
-Query	35	1258	4929	4445	27	2032	3502	2040	4354	3833
-Acc	0.9	0.2	0.7	0.9	0.1	0.4	0.9	0.3	0.1	0.2
+-Average Precision for Query 2714: 0.2
+-Average Precision for Query 316: 0.4
+-Average Precision for Query 27: 0.3
+-Average Precision for Query 3557: 0.3
+-Average Precision for Query 2040: 0.3
+-Average Precision for Query 1258: 0.5
+-Average Precision for Query 3502: 0.1
+-Average Precision for Query 3906: 0.1
+-Average Precision for Query 3833: 0.3
+-Average Precision for Query 4929: 0.2
+-Average Precision for Query 2176: 0.2
+-Average Precision for Query 2032: 0
+-Average Precision for Query 776: 0.1
+-Average Precision for Query 35: 0.3
+-Average Precision for Query 4354: 0.5
+-Average Precision for Query 1656: 0.7
+-Average Precision for Query 1709: 0.1
+-Average Precision for Query 4716: 0
+-Average Precision for Query 2461: 0.5
+-Average Precision for Query 4445: 0
 
 
 ## Scale-Invariant Feature Transform (SIFT) ##
@@ -95,4 +110,27 @@ Here is an example of a Query and the matching results obtained:
     The 10 Best Matches are:
 
 <img src="/data/Source_Results/316_10Best.png" alt="10_Best" width="auto" height="auto">
+
+### Overall Results ###
+
+-Average Precision for Query 2714: 0.6
+-Average Precision for Query 776: 0.9
+-Average Precision for Query 3557: 0.6
+-Average Precision for Query 2461: 0.6
+-Average Precision for Query 1709: 0.8
+-Average Precision for Query 316: 0.9
+-Average Precision for Query 2176: 0.3
+-Average Precision for Query 1656: 0.8
+-Average Precision for Query 4716: 1
+-Average Precision for Query 3906: 0.1
+-Average Precision for Query 35: 0.9
+-Average Precision for Query 1258: 0.2
+-Average Precision for Query 4929: 0.7
+-Average Precision for Query 4445: 0.9
+-Average Precision for Query 27: 0.1
+-Average Precision for Query 2032: 0.4
+-Average Precision for Query 3502: 0.9
+-Average Precision for Query 2040: 0.3
+-Average Precision for Query 4354: 0.1
+-Average Precision for Query 3833: 0.2
 
