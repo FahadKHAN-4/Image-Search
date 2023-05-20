@@ -37,11 +37,13 @@ Query 4716: Matches with images 3588, 2946, 4775, 4207, 2589, 2433, 1487, 2960, 
 Query 2461: Matches with images 4386, 1044, 3362, 2870, 3981, 3791, 4686, 4011, 2589, 511. <br />
 Query 4445: Matches with images 4554, 3547, 839, 1544, 3299, 2490, 4289, 1076, 1112, 1929. <br />
 
-For Query 4354.png
+Here is an example of a Query and the matching results obtained:
+
+    For Query 4354.png:
 
 <img src="/data/Source_Results/4354.jpg" alt="Query" width="auto" height="auto">
 
-The 10 Best Matches are:
+    The 10 Best Matches are:
 
 <img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
 
