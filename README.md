@@ -1,17 +1,31 @@
 # Image Search Using CNN and SIFT
 
-## Introduction ##
+## 1 Introduction ##
 In the era of digital imagery, the ability to efficiently search and match specific instances within a vast database of images is a critical task with numerous applications. Instance search, also known as object retrieval or object recognition, involves identifying and retrieving images containing a specific object or instance of interest. This capability finds utility in various domains, including image retrieval, visual search engines, and augmented reality applications.
 
 This project aims to implement an instance search system utilizing two popular and powerful techniques: Convolutional Neural Networks (CNN) and Scale-Invariant Feature Transform (SIFT). By leveraging the strengths of these methods, the project seeks to match 20 query images against a database comprising 5000 images, ultimately providing accurate and efficient retrieval of relevant of the 10 best instances.
 
-## Convolutional Neural Network (CNN) ##
+## 2 Convolutional Neural Network (CNN) ##
 
 I initially employed a Convolutional Neural Network (CNN), specifically the ResNet18 architecture, renowned for its ability to extract features from images. This pre-trained network, trained on the ImageNet dataset and capable of classifying 1000 object categories, served as the backbone for my implementation.
 
 To begin, I cropped the query images based on the provided bounding box coordinates, saving them in a dedicated folder named "cropped_query". Next, I utilized the 'avgpool' layer to extract feature vectors from both the gallery images and the cropped query images. These feature vectors are essentially dense representations of the input images, consisting of a list of numerical values.
 
 Subsequently, I manually tested the similarity between feature vectors using both Cosine similarity and Euclidean distance measures. After evaluating the results, I found that Cosine similarity yielded superior outcomes. Consequently, I employed Cosine similarity to match the corresponding feature vectors of all 20 query images with the 5000 gallery images.
+
+### 2.1 An Example Match Between A Query and 10 Best Matches Obtained ###
+
+Here is an example of a Query and the matching results obtained:
+
+    For Query 4354.png:
+
+<img src="/data/Source_Results/4354.jpg" alt="Query" width="auto" height="auto">
+
+    The 10 Best Matches are:
+
+<img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
+
+### 2.2 ALL the Matches ###
 
 Here are the 10 best matching results obtained from the instance search implementation using CNN (ResNet18) and Cosine similarity:
 
@@ -36,17 +50,7 @@ Query 4716: Matches with images 3588, 2946, 4775, 4207, 2589, 2433, 1487, 2960, 
 Query 2461: Matches with images 4386, 1044, 3362, 2870, 3981, 3791, 4686, 4011, 2589, 511. <br />
 Query 4445: Matches with images 4554, 3547, 839, 1544, 3299, 2490, 4289, 1076, 1112, 1929. <br />
 
-Here is an example of a Query and the matching results obtained:
-
-    For Query 4354.png:
-
-<img src="/data/Source_Results/4354.jpg" alt="Query" width="auto" height="auto">
-
-    The 10 Best Matches are:
-
-<img src="/data/Source_Results/4354_10Best.png" alt="10_Best" width="auto" height="auto">
-
-### Overall Results ###
+### 2.3 Overall Results ###
 
 - Average Precision for Query 2714: 0.2
 - Average Precision for Query 316: 0.4
@@ -70,13 +74,27 @@ Here is an example of a Query and the matching results obtained:
 - Average Precision for Query 4445: 0
 
 
-## Scale-Invariant Feature Transform (SIFT) ##
+## 3 Scale-Invariant Feature Transform (SIFT) ##
 
 SIFT (Scale-Invariant Feature Transform) is a widely used method for detecting local features in an image. It is capable of identifying and matching similar features that are invariant to scale, rotation, and translation, making it a highly accurate image matching algorithm.
 
 For this project, I utilized the SIFT implementation provided by OpenCV (cv2). Using cv2.SIFT_create().detectAndCompute(), I extracted the key points and descriptors for each image. Once I obtained the key points and descriptors, I experimented with two matching approaches: Brute-Force matching and FLANN (Fast Library for Approximate Nearest Neighbors) based matching. Comparatively, Brute-Force matching was found to be three times faster while producing similar results. Therefore, I employed Brute-Force matching to calculate the similarity for all 20 queries.
 
 During the analysis, it was observed that image 448 exhibited matches with nearly all the queries. This occurrence could be attributed to the image's darkness, which somehow caused it to match with various queries.
+
+### 3.1 An Example Match Between A Query and 10 Best Matches Obtained ###
+
+Here is an example of a Query and the matching results obtained:
+
+    For Query 316.png:
+
+<img src="/data/Source_Results/316.jpg" alt="Query" width="auto" height="auto">
+
+    The 10 Best Matches are:
+
+<img src="/data/Source_Results/316_10Best.png" alt="10_Best" width="auto" height="auto">
+
+### 3.2 ALL the Matches ###
 
 Here are the 10 best matching results obtained from the instance search implementation using SIFT and Brute-Force matching.
 
@@ -101,17 +119,7 @@ Q2040: Matches with images 2666, 448, 781, 3344, 4991, 408, 880, 2955, 2900, 134
 Q4354: Matches with images 2, 2900, 781, 4118, 3539, 4637, 2307, 4223, 4948, 448. <br />
 Q3833: Matches with images 1038, 448, 1368, 4565, 4824, 1091, 1113, 241, 2934, 4605. <br />
 
-Here is an example of a Query and the matching results obtained:
-
-    For Query 316.png:
-
-<img src="/data/Source_Results/316.jpg" alt="Query" width="auto" height="auto">
-
-    The 10 Best Matches are:
-
-<img src="/data/Source_Results/316_10Best.png" alt="10_Best" width="auto" height="auto">
-
-### Overall Results ###
+### 3.3 Overall Results ###
 
 - Average Precision for Query 2714: 0.6
 - Average Precision for Query 776: 0.9
@@ -134,8 +142,14 @@ Here is an example of a Query and the matching results obtained:
 - Average Precision for Query 4354: 0.1
 - Average Precision for Query 3833: 0.2
 
-## Conclusion ##
+## 4 Conclusion ##
 
 Based on the results obtained in this instance search project, it is evident that the SIFT method outperformed the CNN method with the Resnet18 backbone. SIFT has been to match with large number of similar images hence why high accuraies have been observed for the most part. For a few querries; sift could produce good result due it limitation to change in viewpoint. CNN on the other hand was able to match between an accuracy of 0.1 to 0.5 or 1 to 5 accurate matches in the 10 best matches it outputted.
 
 Despite its superiority in accuracy, it is worth noting that the SIFT method had a significant drawback of requiring five times more time to extract feature and comapre them compared to CNN. It is important to highlight that the project did not explore the use of Resnet50, a more accurate backbone for CNN, due to the longer feature extraction time it entails.
+
+## 5 How to Run the Code ##
+- Clone this repository
+- Download the "gallery" folder containing 5000 database images from the drive link: https://drive.google.com/drive/folders/1wu0IZ-aWxG1c3wDsifiVCOtXPPB_TyY9?usp=share_link
+- Replace the "gallery" folder in "data" folder with the downloaded folder from the drive link.
+- Run the ResNet_CNN.ipynb and SIFT_Best.ipynb files to obtain the results as seen in section 2.1, 2.2 and 3.1, 2.3 respectively. 
