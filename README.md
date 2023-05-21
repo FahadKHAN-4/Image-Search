@@ -158,4 +158,4 @@ Despite its superiority in accuracy, it is worth noting that the SIFT method had
 - Clone this repository.
 - Download the "gallery" folder containing 5000 database images from the drive link: https://drive.google.com/drive/folders/1wu0IZ-aWxG1c3wDsifiVCOtXPPB_TyY9?usp=share_link
 - Replace the "gallery" folder in "data" folder with the downloaded folder from the drive link.
-- Run the ResNet_CNN.ipynb and SIFT_Best.ipynb files to obtain the results as seen in section 2.1, 2.2 and 3.1, 2.3 respectively. 
+- Run the ResNet_CNN.ipynb and SIFT_Best.ipynb files to obtain the results as seen in section 2.1, 2.2 and 3.1, 3.2 respectively. 
